@@ -1,0 +1,100 @@
+* {
+  --dark-colour: #1f2937;
+  --light-colour: #f9faf8;
+  --grey-colour: #e5e7eb;
+  --accent-colour: #3882f6;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Tahoma, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  background-color: var(--dark-colour);
+  padding: 15px 150px;
+}
+
+.logo {
+  color: var(--light-colour);
+  font-size: 20px;
+  font-weight: 800;
+  flex: 1 auto;
+}
+
+.menu {
+  display: flex;
+  flex: 2 auto;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+}
+
+.menu a {
+  font-size: 15px;
+  color: var(--grey-colour);
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--dark-colour);
+  gap: 50px;
+  padding: 70px 150px;
+  align-items: center;
+}
+
+.hero-title {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1;
+  gap: 10px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: var(--light-colour);
+  font-weight: 900;
+  flex: 2;
+  margin: 0px;
+  max-height: fit-content;
+}
+
+.subtext {
+  flex: 2;
+  max-height: fit-content;
+  color: var(--grey-colour);
+}
+
+.hero button {
+  width: 100px;
+  padding: 5px 20px;
+  flex: 0 1;
+  background-color: var(--accent-colour);
+  color: var(--light-colour);
+  border: none;
+  border-radius: 5px;
+}
+
+.hero button:hover {
+  background-color: var(--light-colour);
+  color: var(--accent-colour);
+  cursor: pointer;
+  transition: width 2s;
+}
+
+.header img {
+  flex: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  font-style: normal;
+}
