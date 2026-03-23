@@ -5,6 +5,39 @@
   --accent-colour: #3882f6;
 }
 
+.img-source {
+  opacity: 50%;
+  color: var(--grey-colour);
+  font-size: 13px;
+  text-align: right;
+}
+
+.img-source a {
+  color: var(--grey-colour);
+  text-decoration: underline;
+}
+
+.tooltip {
+  cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltiptext {
+  visibility: hidden; /* Hidden by default */
+  width: 130px;
+  background-color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1; /* Ensure tooltip is displayed above content */
+}
+
+/* Show the tooltip text on hover */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -87,8 +120,127 @@ body {
   transition: width 2s;
 }
 
+.header-img {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 .header img {
   flex: 0 auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 150px;
+}
+
+.info h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 100px;
+  row-gap: 50px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-item img {
+  border: 2px solid var(--accent-colour);
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+.grid-subtext {
+  text-align: center;
+  width: 100px;
+  text-wrap: wrap;
+}
+
+.inspo {
+  background-color: var(--grey-colour);
+  padding: 150px 150px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.quote {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.cite {
+  text-align: end;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.cta {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  gap: 50px;
+  background-color: var(--accent-colour);
+  margin: 50px 150px;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.cta-text h4 {
+  margin: 0;
+  font-size: 20px;
+  color: var(--light-colour);
+}
+
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cta-text p {
+  font-size: 16px;
+  margin: 0;
+  color: var(--grey-colour);
+}
+
+.cta button {
+  height: fit-content;
+  padding: 5px 20px;
+  background-color: var(--accent-colour);
+  color: var(--light-colour);
+  border: 2px solid var(--light-colour);
+  border-radius: 5px;
+}
+
+.cta button:hover {
+  background-color: var(--light-colour);
+  color: var(--accent-colour);
+  cursor: pointer;
+  transition: width 2s;
+}
+
+.footer {
+  background-color: var(--dark-colour);
+  color: var(--light-colour);
+  text-align: center;
+  padding: 30px 0px;
 }
 
 ul {
